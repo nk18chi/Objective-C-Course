@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
         while (YES) {
             AdditionQuestion *q = [AdditionQuestion new];
             NSLog(@"%@", q.question);
-            NSString *strInput = [InputHandler getUserInput: 255 andPrompt: @"\nAnswer the question: ('quit' to quit )"];
+            NSString *strInput = [InputHandler getUserInput: 255 andPrompt: @"Answer the question: ('quit' to quit )"];
             if ([strInput isEqualToString:@"quit"]) { break; }
             if ([strInput integerValue] == q.answer) {
                 score.right += 1;
