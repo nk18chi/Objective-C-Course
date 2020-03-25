@@ -22,7 +22,7 @@
 }
 
 - (float) calcVolume {
-    return _height * _weight * _length;
+    return self.height * self.weight * self.length;
 }
 
 - (float) canContainsNBox: (Box *) another {
