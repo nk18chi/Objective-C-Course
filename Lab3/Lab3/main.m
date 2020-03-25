@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
                 score.wrong += 1;
                 NSLog(@"Wrong!");
             }
-            score.print;
+            [score print];
         }
     }
     return 0;
