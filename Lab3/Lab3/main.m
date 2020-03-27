@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "QuestionManager.h"
+#import "QuestionFactory.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 
@@ -15,10 +16,13 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"MATHS!");
         ScoreKeeper *score = [ScoreKeeper new];
+        QuestionManager *manager = [QuestionManager new];
+        QuestionFactory *factory = [QuestionFactory new];
         while (YES) {
-            AdditionQuestion *q = [AdditionQuestion new];
+            Question *q = [factory generateRandomQuestion];
             NSLog(@"%@", q.question);
-            NSString *strInput = [InputHandler getUserInput: 255 andPrompt: @"Answer the question: ('quit' to quit )"];
+            [manager.questions addObject: q];
+            NSString *strInput = [InputHandler getUserInput: 255 andPrompt: @""];
             if ([strInput isEqualToString:@"quit"]) { break; }
             if ([strInput integerValue] == q.answer) {
                 score.right += 1;
@@ -27,6 +31,7 @@ int main(int argc, const char * argv[]) {
                 score.wrong += 1;
                 NSLog(@"Wrong!");
             }
+            NSLog(@"%@", [manager timeOutput]);
             [score print];
         }
     }
