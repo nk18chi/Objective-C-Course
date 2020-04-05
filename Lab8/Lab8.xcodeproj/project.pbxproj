@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B03C5EC0243A8316007AC1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5EBD243A8316007AC1E3 /* main.m */; };
 		B03C5EC1243A8316007AC1E3 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5EBF243A8316007AC1E3 /* Kitchen.m */; };
+		B03C5EC4243A8547007AC1E3 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5EC3243A8547007AC1E3 /* Pizza.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		B03C5EBD243A8316007AC1E3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../../../../../../Downloads/iOS-Student-PizzaRestaurant-master/PizzaRestaurant/main.m"; sourceTree = "<group>"; };
 		B03C5EBE243A8316007AC1E3 /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
 		B03C5EBF243A8316007AC1E3 /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		B03C5EC2243A8547007AC1E3 /* Pizza.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		B03C5EC3243A8547007AC1E3 /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				B03C5EBF243A8316007AC1E3 /* Kitchen.m */,
 				B03C5EBD243A8316007AC1E3 /* main.m */,
 				B03C5EBE243A8316007AC1E3 /* PizzaRestaurant-Prefix.pch */,
+				B03C5EC2243A8547007AC1E3 /* Pizza.h */,
+				B03C5EC3243A8547007AC1E3 /* Pizza.m */,
 			);
 			path = Lab8;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03C5EC4243A8547007AC1E3 /* Pizza.m in Sources */,
 				B03C5EC0243A8316007AC1E3 /* main.m in Sources */,
 				B03C5EC1243A8316007AC1E3 /* Kitchen.m in Sources */,
 			);
