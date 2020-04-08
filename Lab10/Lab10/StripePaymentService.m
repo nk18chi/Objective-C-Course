@@ -1,15 +1,16 @@
 //
-//  PaymentGateway.m
+//  StripePaymentService.m
 //  Lab10
 //
 //  Created by Naoki Mita on 2020-04-08.
 //  Copyright © 2020 Naoki Mita. All rights reserved.
 //
 
-#import "PaymentGateway.h"
+#import "StripePaymentService.h"
 
-@implementation PaymentGateway
+@implementation StripePaymentService
 - (void) processPaymentAmount:(NSInteger) amount {
-    [self.paymentDelegate processPaymentAmount:amount];
+    NSLog(@"Stripe processed amount $ %ld", amount);
 }
+
 @end
