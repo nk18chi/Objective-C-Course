@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B03C5F6B243D81A8007AC1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F6A243D81A8007AC1E3 /* main.m */; };
 		B03C5F73243D820D007AC1E3 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F72243D820D007AC1E3 /* Dice.m */; };
+		B03C5F76243D870D007AC1E3 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F75243D870D007AC1E3 /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B03C5F6A243D81A8007AC1E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B03C5F71243D820D007AC1E3 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
 		B03C5F72243D820D007AC1E3 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		B03C5F74243D870D007AC1E3 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		B03C5F75243D870D007AC1E3 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				B03C5F6A243D81A8007AC1E3 /* main.m */,
+				B03C5F74243D870D007AC1E3 /* InputHandler.h */,
+				B03C5F75243D870D007AC1E3 /* InputHandler.m */,
 				B03C5F71243D820D007AC1E3 /* Dice.h */,
 				B03C5F72243D820D007AC1E3 /* Dice.m */,
 			);
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03C5F73243D820D007AC1E3 /* Dice.m in Sources */,
+				B03C5F76243D870D007AC1E3 /* InputHandler.m in Sources */,
 				B03C5F6B243D81A8007AC1E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
