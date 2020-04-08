@@ -19,7 +19,7 @@
 }
 
 - (void) roll {
-    _value = arc4random_uniform(5) + 1;
+    _value = arc4random_uniform(6) + 1;
 }
 
 - (NSString *) getString {
