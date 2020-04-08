@@ -10,6 +10,7 @@
 		B03C5F6B243D81A8007AC1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F6A243D81A8007AC1E3 /* main.m */; };
 		B03C5F73243D820D007AC1E3 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F72243D820D007AC1E3 /* Dice.m */; };
 		B03C5F76243D870D007AC1E3 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F75243D870D007AC1E3 /* InputHandler.m */; };
+		B03C5F79243D8E4F007AC1E3 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F78243D8E4F007AC1E3 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		B03C5F72243D820D007AC1E3 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		B03C5F74243D870D007AC1E3 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		B03C5F75243D870D007AC1E3 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		B03C5F77243D8E4F007AC1E3 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		B03C5F78243D8E4F007AC1E3 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				B03C5F75243D870D007AC1E3 /* InputHandler.m */,
 				B03C5F71243D820D007AC1E3 /* Dice.h */,
 				B03C5F72243D820D007AC1E3 /* Dice.m */,
+				B03C5F77243D8E4F007AC1E3 /* GameController.h */,
+				B03C5F78243D8E4F007AC1E3 /* GameController.m */,
 			);
 			path = Lab6;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03C5F73243D820D007AC1E3 /* Dice.m in Sources */,
+				B03C5F79243D8E4F007AC1E3 /* GameController.m in Sources */,
 				B03C5F76243D870D007AC1E3 /* InputHandler.m in Sources */,
 				B03C5F6B243D81A8007AC1E3 /* main.m in Sources */,
 			);
