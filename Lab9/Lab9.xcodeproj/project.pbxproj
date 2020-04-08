@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B03C5F03243BD6C9007AC1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F00243BD6C9007AC1E3 /* main.m */; };
-		B03C5F04243BD6C9007AC1E3 /* NSString+PigLatin.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F01243BD6C9007AC1E3 /* NSString+PigLatin.m */; };
+		B03C5F4D243D5CA1007AC1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F4C243D5CA1007AC1E3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B03C5EF4243BD6B4007AC1E3 /* CopyFiles */ = {
+		B03C5F47243D5CA1007AC1E3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B03C5EF6243BD6B4007AC1E3 /* Lab13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab13; sourceTree = BUILT_PRODUCTS_DIR; };
-		B03C5F00243BD6C9007AC1E3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B03C5F01243BD6C9007AC1E3 /* NSString+PigLatin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PigLatin.m"; sourceTree = "<group>"; };
-		B03C5F02243BD6C9007AC1E3 /* NSString+PigLatin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PigLatin.h"; sourceTree = "<group>"; };
+		B03C5F49243D5CA1007AC1E3 /* Lab9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab9; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03C5F4C243D5CA1007AC1E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B03C5EF3243BD6B4007AC1E3 /* Frameworks */ = {
+		B03C5F46243D5CA1007AC1E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,67 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B03C5EED243BD6B4007AC1E3 = {
+		B03C5F40243D5CA1007AC1E3 = {
 			isa = PBXGroup;
 			children = (
-				B03C5EF8243BD6B4007AC1E3 /* Lab13 */,
-				B03C5EF7243BD6B4007AC1E3 /* Products */,
+				B03C5F4B243D5CA1007AC1E3 /* Lab9 */,
+				B03C5F4A243D5CA1007AC1E3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B03C5EF7243BD6B4007AC1E3 /* Products */ = {
+		B03C5F4A243D5CA1007AC1E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B03C5EF6243BD6B4007AC1E3 /* Lab13 */,
+				B03C5F49243D5CA1007AC1E3 /* Lab9 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B03C5EF8243BD6B4007AC1E3 /* Lab13 */ = {
+		B03C5F4B243D5CA1007AC1E3 /* Lab9 */ = {
 			isa = PBXGroup;
 			children = (
-				B03C5F00243BD6C9007AC1E3 /* main.m */,
-				B03C5F02243BD6C9007AC1E3 /* NSString+PigLatin.h */,
-				B03C5F01243BD6C9007AC1E3 /* NSString+PigLatin.m */,
+				B03C5F4C243D5CA1007AC1E3 /* main.m */,
 			);
-			path = Lab13;
+			path = Lab9;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B03C5EF5243BD6B4007AC1E3 /* Lab13 */ = {
+		B03C5F48243D5CA1007AC1E3 /* Lab9 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B03C5EFD243BD6B4007AC1E3 /* Build configuration list for PBXNativeTarget "Lab13" */;
+			buildConfigurationList = B03C5F50243D5CA1007AC1E3 /* Build configuration list for PBXNativeTarget "Lab9" */;
 			buildPhases = (
-				B03C5EF2243BD6B4007AC1E3 /* Sources */,
-				B03C5EF3243BD6B4007AC1E3 /* Frameworks */,
-				B03C5EF4243BD6B4007AC1E3 /* CopyFiles */,
+				B03C5F45243D5CA1007AC1E3 /* Sources */,
+				B03C5F46243D5CA1007AC1E3 /* Frameworks */,
+				B03C5F47243D5CA1007AC1E3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Lab13;
-			productName = Lab13;
-			productReference = B03C5EF6243BD6B4007AC1E3 /* Lab13 */;
+			name = Lab9;
+			productName = Lab9;
+			productReference = B03C5F49243D5CA1007AC1E3 /* Lab9 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B03C5EEE243BD6B4007AC1E3 /* Project object */ = {
+		B03C5F41243D5CA1007AC1E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Naoki Mita";
 				TargetAttributes = {
-					B03C5EF5243BD6B4007AC1E3 = {
+					B03C5F48243D5CA1007AC1E3 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
-			buildConfigurationList = B03C5EF1243BD6B4007AC1E3 /* Build configuration list for PBXProject "Lab13" */;
+			buildConfigurationList = B03C5F44243D5CA1007AC1E3 /* Build configuration list for PBXProject "Lab9" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,30 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = B03C5EED243BD6B4007AC1E3;
-			productRefGroup = B03C5EF7243BD6B4007AC1E3 /* Products */;
+			mainGroup = B03C5F40243D5CA1007AC1E3;
+			productRefGroup = B03C5F4A243D5CA1007AC1E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B03C5EF5243BD6B4007AC1E3 /* Lab13 */,
+				B03C5F48243D5CA1007AC1E3 /* Lab9 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B03C5EF2243BD6B4007AC1E3 /* Sources */ = {
+		B03C5F45243D5CA1007AC1E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03C5F03243BD6C9007AC1E3 /* main.m in Sources */,
-				B03C5F04243BD6C9007AC1E3 /* NSString+PigLatin.m in Sources */,
+				B03C5F4D243D5CA1007AC1E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B03C5EFB243BD6B4007AC1E3 /* Debug */ = {
+		B03C5F4E243D5CA1007AC1E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		B03C5EFC243BD6B4007AC1E3 /* Release */ = {
+		B03C5F4F243D5CA1007AC1E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +235,7 @@
 			};
 			name = Release;
 		};
-		B03C5EFE243BD6B4007AC1E3 /* Debug */ = {
+		B03C5F51243D5CA1007AC1E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -251,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		B03C5EFF243BD6B4007AC1E3 /* Release */ = {
+		B03C5F52243D5CA1007AC1E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -264,25 +258,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B03C5EF1243BD6B4007AC1E3 /* Build configuration list for PBXProject "Lab13" */ = {
+		B03C5F44243D5CA1007AC1E3 /* Build configuration list for PBXProject "Lab9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B03C5EFB243BD6B4007AC1E3 /* Debug */,
-				B03C5EFC243BD6B4007AC1E3 /* Release */,
+				B03C5F4E243D5CA1007AC1E3 /* Debug */,
+				B03C5F4F243D5CA1007AC1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B03C5EFD243BD6B4007AC1E3 /* Build configuration list for PBXNativeTarget "Lab13" */ = {
+		B03C5F50243D5CA1007AC1E3 /* Build configuration list for PBXNativeTarget "Lab9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B03C5EFE243BD6B4007AC1E3 /* Debug */,
-				B03C5EFF243BD6B4007AC1E3 /* Release */,
+				B03C5F51243D5CA1007AC1E3 /* Debug */,
+				B03C5F52243D5CA1007AC1E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B03C5EEE243BD6B4007AC1E3 /* Project object */;
+	rootObject = B03C5F41243D5CA1007AC1E3 /* Project object */;
 }
