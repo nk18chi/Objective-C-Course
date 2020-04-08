@@ -29,14 +29,7 @@
 - (void) start {
     NSLog(@"game start!");
     while (YES) {
-         for (Dice *d in _dices) {
-             if ([_heldDices containsObject: d]) {
-                 NSLog(@"[%@]", d.getString);
-             } else {
-                 NSLog(@"%@", d.getString);
-             }
-         }
-        
+         [self printStatus];
          NSString *input = [InputHandler initInputHandler: 255 andPrompt:@""];
          if ([input isEqual: @"quit"]) { break; }
          if ([input isEqual: @"roll"]) {
@@ -62,7 +55,6 @@
          if ([input isEqual: @"reset"]) {
              [self resetDice];
          }
-        
      }
 }
 
@@ -76,5 +68,18 @@
 
 - (void) resetDice {
     [_heldDices removeAllObjects];
+}
+
+- (void) printStatus {
+    NSLog(@"-------------------");
+    NSString *diceStr = @"";
+    _score = 0;
+    for (Dice *d in _dices) {
+        diceStr = [diceStr stringByAppendingFormat:([_heldDices containsObject:d]) ? @"[%@] " : @"%@ ", [d getString]];
+        _score += d.value;
+    }
+    NSLog(@"dices: %@", diceStr);
+    NSLog(@"score: %d", (int) _score);
+    NSLog(@"-------------------");
 }
 @end

@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GameController : NSObject
+@property (nonatomic, assign) NSInteger score;
 @property NSArray *dices;
 @property NSMutableArray *heldDices;
 
