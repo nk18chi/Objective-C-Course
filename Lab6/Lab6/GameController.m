@@ -29,14 +29,44 @@
 - (void) start {
     NSLog(@"game start!");
     while (YES) {
-         NSString *input = [InputHandler initInputHandler: 255 andPrompt:@""];
-         if ([input isEqual:@"quit"]) { break; }
-         if ([input isEqual:@"roll"]) {
-             for (Dice *d in _dices) {
-                 [d roll];
+         for (Dice *d in _dices) {
+             if ([_heldDices containsObject: d]) {
+                 NSLog(@"[%@]", d.getString);
+             } else {
                  NSLog(@"%@", d.getString);
              }
          }
+        
+         NSString *input = [InputHandler initInputHandler: 255 andPrompt:@""];
+         if ([input isEqual: @"quit"]) { break; }
+         if ([input isEqual: @"roll"]) {
+             for (Dice *d in _dices) {
+                 if ([_heldDices containsObject: d]) {
+                     continue;
+                 }
+                 [d roll];
+             }
+         }
+         if ([input isEqual: @"hold"]) {
+             while(YES) {
+                 NSInteger number = [[InputHandler initInputHandler: 255 andPrompt:@"if you want to fiinish, type '0'."] intValue];
+                 if (number > 0 && number < 6) {
+                     [self holdDie:number - 1];
+                 } else {
+                     NSLog(@"finish hold.");
+                     break;
+                 }
+             }
+         }
+        
      }
+}
+
+- (void) holdDie:(NSInteger) index {
+    if ([_heldDices containsObject: _dices[index]]) {
+        NSLog(@"the number is alreday held.");
+    } else {
+        [_heldDices addObject: _dices[index]];
+    }
 }
 @end
