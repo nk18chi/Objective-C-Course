@@ -12,5 +12,7 @@
 - (void) processPaymentAmount:(NSInteger) amount {
     NSLog(@"Stripe processed amount $ %ld", amount);
 }
-
+- (BOOL) canProcessPayment {
+    return arc4random_uniform(2) == 1;
+}
 @end
