@@ -48,8 +48,9 @@
              }
          }
          if ([input isEqual: @"hold"]) {
+             NSLog(@"%@", @"if you want to fiinish, type '0'.");
              while(YES) {
-                 NSInteger number = [[InputHandler initInputHandler: 255 andPrompt:@"if you want to fiinish, type '0'."] intValue];
+                 NSInteger number = [[InputHandler initInputHandler: 255 andPrompt:@""] intValue];
                  if (number > 0 && number < 6) {
                      [self holdDie:number - 1];
                  } else {
@@ -57,6 +58,9 @@
                      break;
                  }
              }
+         }
+         if ([input isEqual: @"reset"]) {
+             [self resetDice];
          }
         
      }
@@ -68,5 +72,9 @@
     } else {
         [_heldDices addObject: _dices[index]];
     }
+}
+
+- (void) resetDice {
+    [_heldDices removeAllObjects];
 }
 @end
