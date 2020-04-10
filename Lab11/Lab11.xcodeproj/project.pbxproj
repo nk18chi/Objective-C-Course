@@ -10,6 +10,8 @@
 		B03C5FF5243FEAF4007AC1E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5FF4243FEAF4007AC1E3 /* main.m */; };
 		B03C6000243FEB0D007AC1E3 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5FFC243FEB0D007AC1E3 /* Kitchen.m */; };
 		B03C6001243FEB0D007AC1E3 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5FFE243FEB0D007AC1E3 /* Pizza.m */; };
+		B03C6005244021FE007AC1E3 /* Manager1.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C6004244021FE007AC1E3 /* Manager1.m */; };
+		B03C6008244023C2007AC1E3 /* Manager2.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C6007244023C2007AC1E3 /* Manager2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,10 @@
 		B03C5FFE243FEB0D007AC1E3 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 		B03C5FFF243FEB0D007AC1E3 /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
 		B03C6002243FEB2E007AC1E3 /* KitchenDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenDelegate.h; sourceTree = "<group>"; };
+		B03C6003244021FE007AC1E3 /* Manager1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager1.h; sourceTree = "<group>"; };
+		B03C6004244021FE007AC1E3 /* Manager1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager1.m; sourceTree = "<group>"; };
+		B03C6006244023C2007AC1E3 /* Manager2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager2.h; sourceTree = "<group>"; };
+		B03C6007244023C2007AC1E3 /* Manager2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,10 @@
 				B03C5FFE243FEB0D007AC1E3 /* Pizza.m */,
 				B03C5FFF243FEB0D007AC1E3 /* PizzaRestaurant-Prefix.pch */,
 				B03C5FF4243FEAF4007AC1E3 /* main.m */,
+				B03C6003244021FE007AC1E3 /* Manager1.h */,
+				B03C6004244021FE007AC1E3 /* Manager1.m */,
+				B03C6006244023C2007AC1E3 /* Manager2.h */,
+				B03C6007244023C2007AC1E3 /* Manager2.m */,
 			);
 			path = Lab11;
 			sourceTree = "<group>";
@@ -136,6 +146,8 @@
 				B03C6001243FEB0D007AC1E3 /* Pizza.m in Sources */,
 				B03C6000243FEB0D007AC1E3 /* Kitchen.m in Sources */,
 				B03C5FF5243FEAF4007AC1E3 /* main.m in Sources */,
+				B03C6005244021FE007AC1E3 /* Manager1.m in Sources */,
+				B03C6008244023C2007AC1E3 /* Manager2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
