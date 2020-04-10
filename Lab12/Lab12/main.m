@@ -10,6 +10,7 @@
 #import "Kitchen.h"
 #import "Manager1.h"
 #import "Manager2.h"
+#import "DeliveryService.h"
 
 NSString *getInput() {
     char inputChars[255];
@@ -19,8 +20,9 @@ NSString *getInput() {
 
 int main(int argc, const char * argv[]) {
     Kitchen *kitchen = [Kitchen new];
-    Manager1 *m1 = [Manager1 new];
-    Manager2 *m2 = [Manager2 new];
+    DeliveryService *ds = [DeliveryService new];
+    Manager1 *m1 = [[Manager1 alloc] initDeliveryService:ds];
+    Manager2 *m2 = [[Manager2 alloc] initDeliveryService:ds];
     @autoreleasepool {
         while(YES) {
             NSLog(@"select size for a pizza.");
@@ -44,8 +46,9 @@ int main(int argc, const char * argv[]) {
                     kitchen.delegate = nil;
                     break;
             }
-            Pizza *pizza = [kitchen makePizzaWithSize:size toppings:toppings];
-            NSLog(@"size: %ld, toppings: %@", pizza.size + 1, pizza.toppings);
+            [kitchen makePizzaWithSize:size toppings:toppings];
+            NSLog(@"order recods: %@", [ds getHistoryOrder]);
+            NSLog(@"");
         }
     }
 }

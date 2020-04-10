@@ -10,6 +10,14 @@
 
 @implementation Manager2
 
+- (instancetype)initDeliveryService:(DeliveryService *)deliveryService {
+    self = [super init];
+    if (self) {
+        _deliveryService = deliveryService;
+    }
+    return self;
+}
+
 - (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings {
     return YES;
 }
@@ -20,6 +28,7 @@
 
 - (void)kitchenDidMakePizza:(Pizza *)pizza {
     NSLog(@"Good job!");
+    [_deliveryService deliverPizza:pizza];
 }
 
 

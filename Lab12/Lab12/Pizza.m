@@ -24,4 +24,13 @@
 + (Pizza*) meatLoversWithSize: (PizzaSize) size {
     return [[Pizza alloc] initWithSize:size andToppings:@[@"meat", @"meat", @"meat"]];
 }
+
+- (NSString *) getSizeStr {
+    switch (_size) {
+        case SMALL: return @"small";
+        case MEDIUM: return @"medium";
+        case LARGE: return @"large";
+        default: return @"";
+    }
+}
 @end

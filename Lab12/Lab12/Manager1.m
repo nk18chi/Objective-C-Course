@@ -10,6 +10,14 @@
 
 @implementation Manager1
 
+- (instancetype)initDeliveryService:(DeliveryService *)deliveryService {
+    self = [super init];
+    if (self) {
+        _deliveryService = deliveryService;
+    }
+    return self;
+}
+
 - (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings; {
     for (NSString *t in toppings) {
         if ([t isEqualToString:@"anchovie"]) {
@@ -21,6 +29,10 @@
 
 - (BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen {
     return NO;
+}
+
+- (void)kitchenDidMakePizza:(Pizza *)pizza {
+    [_deliveryService deliverPizza:pizza];
 }
 
 @end
