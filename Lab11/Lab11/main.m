@@ -28,10 +28,7 @@ int main(int argc, const char * argv[]) {
             PizzaSize size = [getInput() intValue] - 1;
             
             NSLog(@"select toppings for a pizza.");
-            NSString *i = getInput();
-            NSArray *toppings = [i componentsSeparatedByString:@" "];
-            NSLog(@"%@", i);
-            NSLog(@"%@", toppings);
+            NSArray *toppings = [getInput() componentsSeparatedByString:@" "];
             
             NSLog(@"select a manager for making.");
             NSLog(@"1. manager1, 2. manager2");
