@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
         while(YES) {
             NSLog(@"select size for a pizza.");
             NSLog(@"1. small, 2. medium, 3. large.");
-            PizzaSize size = [getInput() intValue];
+            PizzaSize size = [getInput() intValue] - 1;
             
             NSLog(@"select toppings for a pizza.");
             NSString *i = getInput();
@@ -48,7 +48,7 @@ int main(int argc, const char * argv[]) {
                     break;
             }
             Pizza *pizza = [kitchen makePizzaWithSize:size toppings:toppings];
-            NSLog(@"size: %ld, toppings: %@", pizza.size, pizza.toppings);
+            NSLog(@"size: %ld, toppings: %@", pizza.size + 1, pizza.toppings);
         }
     }
 }
