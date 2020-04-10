@@ -32,6 +32,7 @@
 		B03C5FFD243FEB0D007AC1E3 /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		B03C5FFE243FEB0D007AC1E3 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 		B03C5FFF243FEB0D007AC1E3 /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
+		B03C6002243FEB2E007AC1E3 /* KitchenDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		B03C5FF3243FEAF4007AC1E3 /* Lab11 */ = {
 			isa = PBXGroup;
 			children = (
+				B03C6002243FEB2E007AC1E3 /* KitchenDelegate.h */,
 				B03C5FFB243FEB0D007AC1E3 /* Kitchen.h */,
 				B03C5FFC243FEB0D007AC1E3 /* Kitchen.m */,
 				B03C5FFD243FEB0D007AC1E3 /* Pizza.h */,

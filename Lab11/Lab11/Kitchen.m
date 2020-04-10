@@ -10,9 +10,20 @@
 
 @implementation Kitchen
 
-/*- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
-{
-    
-}*/
+- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings {
+    Pizza *pizza = nil;
+    if ([_delegate kitchen:self shouldMakePizzaOfSize:size andToppings:toppings]) {
+        if ([_delegate kitchenShouldUpgradeOrder:self]) {
+            size = LARGE;
+        }
+        pizza = [[Pizza alloc] initWithSize: size andToppings:toppings];
+        if ([_delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
+            [_delegate kitchenDidMakePizza:pizza];
+        }
+    } else {
+        NSLog(@"Sorry, your order was cancelled.");
+    }
+    return pizza;
+}
 
 @end
